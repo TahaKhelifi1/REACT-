@@ -1,0 +1,32 @@
+/* App.css */
+.app {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.task-item.completed {
+  background-color: #d3ffd3;
+  text-decoration: line-through;
+}
+
+button {
+  margin-left: 10px;
+}
