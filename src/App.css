@@ -1,32 +1,129 @@
-/* App.css */
-.app {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
+/* General styling */
+body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
+/* Main app container */
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Title */
 h1 {
-  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.task-list {
-  margin-top: 20px;
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-.task-item {
+input {
   padding: 10px;
   margin: 10px 0;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  font-size: 16px;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.task-item.completed {
-  background-color: #d3ffd3;
-  text-decoration: line-through;
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-button {
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Task list styling */
+div.task-list {
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Task item styling */
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.task p {
+  margin: 0;
+  font-size: 18px;
+  flex-grow: 1;
+}
+
+.task.completed p {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+button.task-btn {
+  background-color: #f44336;
   margin-left: 10px;
+}
+
+button.task-btn:hover {
+  background-color: #e53935;
+}
+
+button.edit-btn {
+  background-color: #ff9800;
+  margin-left: 10px;
+}
+
+button.edit-btn:hover {
+  background-color: #f57c00;
+}
+
+button.complete-btn {
+  background-color: #4CAF50;
+}
+
+button.complete-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Filter buttons */
+div.filter-buttons {
+  margin-top: 20px;
+}
+
+div.filter-buttons button {
+  background-color: #2196F3;
+  margin: 0 10px;
+}
+
+div.filter-buttons button:hover {
+  background-color: #1976D2;
 }

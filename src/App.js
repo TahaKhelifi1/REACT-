@@ -1,5 +1,5 @@
 // App.js
-import React, { useState, useEffect } from 'react';
+/*import React, { useState, useEffect } from 'react';
 import TaskList from './component/TaskList';
 import TaskForm from './component/TaskForm';
 
@@ -59,4 +59,23 @@ const App = () => {
   );
 };
 
+export default App;*/
+import React from 'react';
+import AddTask from './AddTask';
+import ListTask from './ListTask';
+import Filter from './Filter';
+import './App.css';
+
+const App = () => {
+  return (
+    <div>
+      <h1>ToDo Application</h1>
+      <AddTask />
+      <Filter />
+      <ListTask />
+    </div>
+  );
+};
+
 export default App;
+
